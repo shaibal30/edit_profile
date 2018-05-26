@@ -10,7 +10,8 @@
       password VARCHAR(255) NOT NULL,
       PRIMARY KEY(id)
       );
-    DESC edit_profile;
+    DESC user_info;
+
     
 -----DBMS----------
 
