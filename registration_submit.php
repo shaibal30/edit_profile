@@ -1,7 +1,7 @@
 <?php
 	$hostname= "localhost";
 	$username= "root";
-	$password= "AYONchat16@";
+	$password= "shaibal";
 	$dbname= "edit_profile";
 	$conn= mysqli_connect($hostname,$username,$password,$dbname);
 	if(!$conn){
