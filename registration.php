@@ -8,9 +8,9 @@
             <div class="header">            
                 <h1>Signup </h1>
             </div class="header">
-            <div class="form">
+            <div class="form2">
                 <h3>Name</h3>
-                Name: <input type= "text" name="name"/> 
+                Name: <input type= "text" name="name"/></br> 
                 Email: <input type= "text"  name= "email"/></br></br>
                 Password:<input type="password" name="password"/><br>
 	            <input type = "submit" name= "submit"/>

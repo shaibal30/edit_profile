@@ -11,7 +11,7 @@
             
 
         </div>
-        <div class="form">        
+        <div class="form1">        
             <form method="POST" action="login_submit.php">
                 email
                 <input type="text" name="email"/>
