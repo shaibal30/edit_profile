@@ -16,7 +16,7 @@ session_start();
     
     $email= $_POST['email'];
     $password= $_POST['password'];
-    $sql = "SELECT * FROM user_info WHERE email='$email' AND password='$password'";
+    $sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
     $result = mysqli_query($conn,$sql);
     if(!$result){
         die(mysqli_error($conn));
