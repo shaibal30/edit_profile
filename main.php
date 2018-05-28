@@ -8,9 +8,14 @@
         <div>
             <h1>**choose**</h1>
         </div>
-        <div class="form">        
+        <div class="form1">        
             <form method="POST" action="login1.php">
             <input type="submit" value="Login"/>
+            </form>
+        </div>
+        <div class="form2">        
+            <form method="POST" action="registration.php">
+            <input type="submit" value="Signup"/>
             </form>
         </div>
     </body>  

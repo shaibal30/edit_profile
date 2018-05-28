@@ -19,7 +19,7 @@ p{
     width: 300px;
     background: #00ffff;
 }
-.form {
+.form1,.form2 {
         position: relative;
         top: 50px;
         z-index: 100;
@@ -29,7 +29,7 @@ p{
         padding: 45px;
         text-align: center;      
 }
-.form .message {
+.form1,.form2 .message {
   color: #000000;
   font-size: 12px;
   border: none;
@@ -37,10 +37,10 @@ p{
   position: relative;
   border-style: none; 
 }
-.form .message a{
+.form1,.form2 .message a{
         color: #0000ff;
 }
-.form .input {
+.form1,.form2 .input {
                 position: relative;
                 color: #000000;
                 z-index: 20;
