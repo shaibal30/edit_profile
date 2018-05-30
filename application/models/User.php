@@ -9,6 +9,17 @@ class User extends CI_Model {
         $this->load->database();
     }
 
+    public function add_data($name, $email, $password) {
+        $data = array(
+            'name' => $name,
+            'email' => $email,
+            'password' => $password
+        );
+
+        $this->db->insert('users', $data);
+        return true;
+    }
+
     public function check_user_password($email, $password) {
         $query = $this->db->get_where('users', array('email' => $email, 'password' => $password));
 
