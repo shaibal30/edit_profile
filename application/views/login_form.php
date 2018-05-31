@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <h1>~lets socialise~</h1> 
         </div>
               
-        <form method="POST" action="<?php echo base_url()?>/index.php/login/submit"
+        <form id="login-form" method="POST" action="<?php echo base_url()?>/index.php/login/submit"
             <div class="login-wrap">
                 <div class="login-html">
                     <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
@@ -38,7 +38,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <label for="check"><span class="icon"></span> Keep me Signed in</label>
                             </div>
                             <div class="group">
-                                    <input type="submit" class="button" value="Sign In">
+                                    <input id="login-button" type="submit" class="button" value="Sign In">
                             </div>
                             <div class="hr"></div>
                             <div class="foot-lnk">
@@ -74,7 +74,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
             </div>
         </form>
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/script.js"></script>
+        <script type="text/javascript" src="<?php echo base_url(); ?>/static/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="<?php echo base_url(); ?>/static/js/login.js"></script>
+        <script type="text/javascript" src="<?php echo base_url(); ?>/static/js/jquery.validate.min.js"></script>
+        
+        <script>
+            var login_submit_url = "<?php echo base_url() ?>index.php/login/submit";
+        </script>
     </body>     
 </html>

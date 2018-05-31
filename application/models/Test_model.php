@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Test_model extends CI_Model {
     public function __construct() {
         parent::__construct();
-        //connecting to the database.fetching the credentials from config/dataabse.php//
+        //connecting to the database.fetching the credentials from config/database.php//
         $this->load->database(); 
     }
     

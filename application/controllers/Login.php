@@ -18,11 +18,20 @@ class Login extends CI_Controller {
         $row = $this->user->check_user_password($email, $password);
 
         if (!$row) {
-            $this->load->view('login_submit_failed');
+            $obj = new \stdClass();
+            $obj->success = false;
+            $obj->error_message = "login failed";
+            $this->load->view('login_submit_failed', array('data' => $obj));
         } else {
             $_SESSION['user_id'] = $row->id;
             //$_SESSION['user_name'] = $r->name;
-            $this->load->view('login_submit_successful', array('row' => $row));
+
+            $obj = new \stdClass();
+            $obj->success = true;
+            $obj->success_message = "login successful";
+            $obj->row = $row;
+
+            $this->load->view('login_submit_successful', array('data' => $obj));
         }
     }
 
