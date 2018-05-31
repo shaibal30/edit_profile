@@ -1,13 +1,5 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-
-    </head>
-    <body>
-        Registration Successfull
-    </body>
-</html>
+<?php echo json_encode($data);?>
 

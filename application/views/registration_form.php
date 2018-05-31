@@ -106,7 +106,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </head>
     <body>
         <div class="signup-form">
-            <form action="<?php echo base_url()?>/index.php/registration/submit" method="post">
+            <form id="registration-form" action="<?php echo base_url()?>/index.php/registration/submit" method="post">
                 <h2>Register</h2>
                 <p class="hint-text">Create your account. It's free and only takes a minute.</p>
                 <div class="form-group">
@@ -119,7 +119,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <input type="password" class="form-control" name="password" placeholder="Password" required="required" id="password" onkeyup='check();' />
                 </div>    
                 <div class="form-group">
-                    <input type="password" class="form-control" name="Confirm password" placeholder="Confirm Password" required="required" id="confirm_password" onkeyup='check();' />
+                    <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required" id="confirm_password" onkeyup='check();' />
                     <span id='message'></span>
                 </div>    
                 <div class="form-group">
@@ -129,13 +129,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </label>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
+                    <button id="registration-button" type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
                 </div>
             </form>
             <div class="text-center">Already have an account? <a href="#">Sign in</a></div>
-            <script src="js/jquery-3.3.1.min.js"></script>
-            <script src="js/script.js"></script>
-            <script type="text/javascript" src="/edit_profile/js/pass.js"></script>
+            <script type="text/javascript" src="<?php echo base_url()?>/static/js/jquery-3.3.1.min.js"></script>
+            <script type="text/javascript" src="<?php echo base_url()?>/static/js/jquery.validate.js"></script>
+            <script type="text/javascript" src="<?php echo base_url()?>/static/js/pass.js"></script>
+            <script type ="text/javascript" src="<?php echo base_url()?>/static/js/registration.js"></script>
+            <script>
+                var registration_submit_url="<?php echo base_url()?>/index.php/registration/submit"
+            </script>
         </div>
     </body>
 </html>                            

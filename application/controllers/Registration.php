@@ -17,9 +17,15 @@ class Registration extends CI_Controller {
         $r = $this->user->add_data($name, $email, $password);
 
         if ($r) {
-            $this->load->view('registration_submit_success');
+            $obj = new \stdClass();
+            $obj->success = true;
+            $obj->success_message = "Registration successfull";
+            $this->load->view('registration_submit_success', array('data' => $obj));
         } else {
-            $this->load->view('registration_submit_failed');
+            $obj = new \stdClass();
+            $obj->success = false;
+            $obj->error_message = "Registration failed";
+            $this->load->view('registration_submit_failed', array('data' => $obj));
         }
     }
 
