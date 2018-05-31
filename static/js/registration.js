@@ -26,6 +26,9 @@ $(document).ready(function () {
             },
             password: {
                 required: true
+            },
+            confirm_password: {
+                required: true
             }
         },
         submitHandler: function () {

@@ -110,21 +110,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <h2>Register</h2>
                 <p class="hint-text">Create your account. It's free and only takes a minute.</p>
                 <div class="form-group">
-                    <input type="name" class="form-control" name="name" placeholder="Name" required="required ">
+                    <input type="name" class="form-control" name="name" placeholder="Name" >
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+                    <input type="email" class="form-control" name="email" placeholder="Email" >
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" name="password" placeholder="Password" required="required" id="password" onkeyup='check();' />
+                    <input type="password" class="form-control" name="password" placeholder="Password" id="password" onkeyup='check();' />
                 </div>    
                 <div class="form-group">
-                    <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required" id="confirm_password" onkeyup='check();' />
+                    <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" id="confirm_password" onkeyup='check();' />
                     <span id='message'></span>
                 </div>    
                 <div class="form-group">
                     <label class="checkbox-inline">
-                        <input type="checkbox" required="required"> 
+                        <input type="checkbox" > 
                         I accept the Terms of Use &amp; Privacy Policy
                     </label>
                 </div>
@@ -134,7 +134,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </form>
             <div class="text-center">Already have an account? <a href="#">Sign in</a></div>
             <script type="text/javascript" src="<?php echo base_url()?>/static/js/jquery-3.3.1.min.js"></script>
-            <script type="text/javascript" src="<?php echo base_url()?>/static/js/jquery.validate.js"></script>
+            <script type="text/javascript" src="<?php echo base_url()?>/static/js/jquery.validate.min.js"></script>
             <script type="text/javascript" src="<?php echo base_url()?>/static/js/pass.js"></script>
             <script type ="text/javascript" src="<?php echo base_url()?>/static/js/registration.js"></script>
             <script>
